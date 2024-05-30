@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="SchoolWpf.View.Task3View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SchoolWpf.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Background="CornflowerBlue" CornerRadius="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.ColumnSpan="3">
+				<TextBlock  FontSize="24" Text="Task 3" FontWeight="Bold" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center">
+				<TextBlock Text="Név:" FontSize="20" FontWeight="Bold" Padding="0 0 0 10"/>
+				<TextBlock Text="Kor:" FontSize="20" FontWeight="Bold" Padding="0 0 0 10"/>
+				<TextBlock Text="Lakóhely:" FontSize="20" FontWeight="Bold" Padding="0 0 0 10"/>
+				<TextBlock Text="Munka:" FontSize="20" FontWeight="Bold" Padding="0 0 0 10"/>
+				<TextBlock Text="Hobbi:" FontSize="20" FontWeight="Bold" Padding="0 0 0 10"/>
+            </StackPanel>
+
+            <StackPanel x:Name="spInput" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center">
+				<TextBox Text="{Binding Name}" Width="150" Height="30" Margin="0 0 0 10" Background="LightBlue"/>
+				<TextBox Text="{Binding Age}" Width="150" Height="30" Margin="0 0 0 10" Background="LightBlue"/>
+				<TextBox Text="{Binding City}" Width="150" Height="30" Margin="0 0 0 10" Background="LightBlue"/>
+				<TextBox Text="{Binding Occupation}" Width="150" Height="30" Margin="0 0 0 10" Background="LightBlue"/>
+				<TextBox Text="{Binding Hobbies}" Width="150" Height="30" Margin="0 0 0 10" Background="LightBlue"/>
+            </StackPanel>
+
+            <ListBox x:Name="lbPeople" 
+                     IsSynchronizedWithCurrentItem="True"
+                     ItemsSource="{Binding}"
+				     Grid.Row="1" 
+					 HorizontalAlignment="Center" 
+					 Width="450" 
+					 Margin="0,0,0,5"
+					 Background="LightBlue">
+
+            </ListBox>
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center">
+				<Button Click="Add_Click" Content="Add" Width="140" FontSize="24" FontWeight="Bold" Margin="20" Background="LightBlue"/>
+				<Button Click="Update_Click" Content="Update" Width="140" FontSize="24" Margin="20" FontWeight="Bold" Background="LightBlue"/>
+				<Button Click="Delete_Click" Content="Delete" Width="140" FontSize="24" Margin="20" FontWeight="Bold" Background="LightBlue"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolWpf", "SchoolWpf\SchoolWpf.csproj", "{B50971EC-4027-4925-9D9A-A6F86B40967C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADF0A87F-CAC1-42D6-80EF-B91C9875E360} = {ADF0A87F-CAC1-42D6-80EF-B91C9875E360}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3Database", "Task3Database\Task3Database.csproj", "{ADF0A87F-CAC1-42D6-80EF-B91C9875E360}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B50971EC-4027-4925-9D9A-A6F86B40967C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50971EC-4027-4925-9D9A-A6F86B40967C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50971EC-4027-4925-9D9A-A6F86B40967C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50971EC-4027-4925-9D9A-A6F86B40967C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF0A87F-CAC1-42D6-80EF-B91C9875E360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF0A87F-CAC1-42D6-80EF-B91C9875E360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF0A87F-CAC1-42D6-80EF-B91C9875E360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF0A87F-CAC1-42D6-80EF-B91C9875E360}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEE592CA-3E99-4B92-A0D4-AFB21A5AC1EE}
+	EndGlobalSection
+EndGlobal
